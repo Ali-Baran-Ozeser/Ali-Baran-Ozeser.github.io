@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bursa Mutfağı</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="resimler/bursalogo2.png"
+      type="image/x-icon"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        /* Bütün elemanları etkiler */
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, sans-serif;
+        color: white;
+      }
+      body {
+        background-color: rgb(41, 40, 40);
+        position: relative;
+      }
+
+      header {
+        /* Sayfanin Ust Kismi */
+        position: relative;
+        height: 90px;
+        background-color: green;
+      }
+
+      h1 {
+        box-sizing: content-box;
+        position: absolute;
+        font-family: "Pacifico", serif;
+        margin-top: 0px;
+        height: 90px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: lighter;
+        background-color: green;
+        line-height: 75px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      p {
+        display: flex;
+        margin: 50px 200px 50px 200px;
+        font-size: xx-large;
+        line-height: 65px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 60px;
+        margin: 50px 0 50px 0;
+      }
+
+      .list1 {
+        list-style-type: none;
+        position: relative;
+        margin: 50px 0 0 180px;
+        text-align: left;
+        font-size: xx-large;
+
+        width: fit-content;
+      }
+      .list1 ul {
+        margin: 20px 0 20px 70px;
+        list-style-type: disc;
+      }
+      h3 {
+        font-size: 40px;
+        margin: 80px 0 80px 280px;
+        color: rgb(100, 226, 138);
+        text-decoration: underline;
+      }
+      u {
+        color: rgb(100, 226, 138);
+        text-decoration: underline;
+      }
+
+      .logo {
+        position: absolute;
+        top: 7px;
+        left: 30px;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+      }
+
+      img {
+        border-radius: 10px;
+        width: 20%;
+        position: relative;
+        right: 0px;
+      }
+
+      .menu {
+        position: relative;
+        list-style: none;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin: 0;
+        padding: 0 0 0 250px;
+      }
+
+      .menu li {
+        font-weight: bold;
+        font-size: 20px;
+        position: relative;
+      }
+
+      .menu li ul {
+        border-radius: 0 0 10px 10px;
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        background-color: rgb(66, 64, 64);
+        z-index: 10;
+        list-style: none;
+      }
+
+      ul li a {
+        display: block;
+        width: auto;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      ul li a:hover {
+        background-color: black;
+      }
+      ul li ul a:hover {
+        background-color: rgb(154, 235, 154);
+      }
+
+      .menu li:hover ul {
+        display: block;
+      }
+
+      footer {
+        /* En alt kisim */
+        color: white;
+        text-align: center;
+        background-color: green;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--Sayfanin Ust Kismi-->
+      <img class="logo" src="resimler/bursalogo2.png" alt="logo" />
+      <h1>Bursayı Keşfet!</h1>
+      <ul class="menu">
+        <li>
+          <a href="index.html"
+            ><i class="fa-solid fa-house"></i> &nbsp;Anasayfa</a
+          >
+        </li>
+        <li>
+          <a href="#">Bursa Hakkında</a>
+          <ul>
+            <li><a href="tarih.html">Bursa'nın Tarihi</a></li>
+            <li><a href="nufus.html">Bursa'nın Nüfusu</a></li>
+            <li><a href="turizm.html">Bursa'nın Turizmi</a></li>
+            <li><a href="mutfak.html">Bursa'nın Mutfağı</a></li>
+          </ul>
+        </li>
+        <li style="margin-left: 700px">
+          <a href="https://www.instagram.com/bursabuyuksehir/?hl=tr"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/bursabuyuksehir/?locale=tr_TR"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://x.com/bursabuyuksehir?mx=2"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/c/BursaB%C3%BCy%C3%BCk%C5%9FehirBelediyesi16"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+    <h2>
+      <!--Sayfanin İcerigi-->
+      Bursa Mutfağı
+    </h2>
+    <p>
+      Bursa mutfağı, doğallığı ve yerel ürünleriyle dikkat çeker. Coğrafi konumu
+      sayesinde hem zengin bitki örtüsünden hem de et ürünlerinden faydalanan bu
+      mutfak, hem göze hem damağa hitap eder. Yemeklerde kullanılan malzemelerin
+      tazeliği, Bursa’nın mutfak kültüründeki temel taşlardan biridir.
+      Geleneksel yöntemlerle yapılan yemekler, aile sofralarında ve
+      restoranlarda büyük bir özenle sunulur.
+    </p>
+    <p>Bursa'nın en bilinen lezzetleri:</p>
+    <ul class="list1">
+      <li>
+        <u>Ana Yemekler ve Yöresel Lezzetler</u>
+        <ul>
+          <li>İskender Kebap</li>
+          <li>Cantık</li>
+          <li>Pideli Köfte</li>
+        </ul>
+      </li>
+      <li>
+        <u>Çorbalar</u>
+        <ul>
+          <li>Düğün Çorbası</li>
+          <li>Tahinli Çorba</li>
+        </ul>
+      </li>
+      <li>
+        <u>Tatlılar</u>
+        <ul>
+          <li>Kemalpaşa Tatlısı</li>
+          <li>Kestane Şekeri</li>
+        </ul>
+      </li>
+      <li>
+        <u>İçecekler</u>
+        <ul>
+          <li>Şıra</li>
+          <li>Dağ Çayı</li>
+        </ul>
+      </li>
+    </ul>
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+    <h3>1. İskender Kebap</h3>
+    <p>
+      Bursa'nın en bilinen lezzetlerinden biri İskender kebaptır. Bu ünlü yemek,
+      ince ince dilimlenen döner etinin üzerine tereyağı ve domates sosu
+      dökülerek hazırlanır. Altına serilen pide dilimleri yemeğe farklı bir doku
+      katarken, yanında sunulan yoğurt lezzeti dengeler. İskender kebabın
+      tarihi, 19. yüzyıla kadar uzanır ve Bursa’daki aile işletmeleri bu lezzeti
+      nesiller boyu korumuştur.
+      <img
+        src="https://www.diyetkolik.com/site_media/media/2019/11/01/iskender-kebap-tereyagl-kac-kalori-1.webp"
+        alt="iskender"
+      />
+    </p>
+    <h3>2. Cantık</h3>
+    <p>
+      Cantık, Bursa mutfağının öne çıkan hamur işlerinden biridir. Yuvarlak ve
+      küçük pide formunda hazırlanan cantık, genellikle kıymalı, peynirli ya da
+      kuşbaşı etli iç harçla doldurulur. İçi bol malzemeli, hamuru ise yumuşak
+      ve çıtır olmasıyla dikkat çeker.
+      <img
+        src="https://www.ardaninmutfagi.com/wp-content/uploads/2023/03/cantik-t.jpg"
+        alt="Cantık"
+      />
+    </p>
+    <h3>3. Pideli Köfte</h3>
+    <p>
+      Pideli köfte, İskender kebaba benzer bir sunumla yapılan ancak döner
+      yerine ızgara köfte kullanılan bir yemektir. Altında tereyağlı pide,
+      üzerinde ise domates sosu ve yoğurtla servis edilen bu yemek, Bursa’nın
+      yaratıcı mutfak anlayışını temsil eder.
+      <img
+        src="https://static.daktilo.com/sites/1178/uploads/2024/07/05/1200x627-bursa-pideli-kofte-evde-pideli-kofte-nasil-yapilir-malzemeleri-ve-puf-noktalari-1724721011.jpg"
+        alt="Pideli Köfte"
+      />
+    </p>
+    <h3>4. Düğün Çorbası</h3>
+    <p>
+      Bursa’da düğün ve özel günlerin vazgeçilmezi olan düğün çorbası, kuzu
+      etiyle hazırlanan bir lezzettir. Un, yoğurt ve limon suyuyla terbiyesi
+      yapılan bu çorba, hafif ekşi bir aromaya sahiptir.
+      <img
+        src="https://gastromanya.com/wp-content/uploads/2016/11/dugun-corbasi.jpg"
+        alt="Düğün Çorbası"
+      />
+    </p>
+    <h3>5. Tahinli Çorba</h3>
+    <p>
+      Bursa mutfağında tahin, çorbalarda da kullanılır. Tahinli çorba, özellikle
+      kış mevsiminde tüketilen bir yemektir. Tahin, su, un ve sarımsakla
+      hazırlanan bu çorba, farklı bir tat deneyimi sunar.
+      <img
+        src="https://www.aslihangurbuz.com.tr/wp-content/uploads/2021/07/Tahinli-Corba.jpg"
+        alt="Tahinli Çorba"
+      />
+    </p>
+    <h3>6. Kemalpaşa Tatlısı</h3>
+    <p>
+      Adını Bursa’nın Mustafakemalpaşa ilçesinden alan bu tatlı, bölgenin
+      sembollerinden biridir. Taze peynirle hazırlanan tatlı hamurlar, şerbetle
+      buluşarak yoğun bir lezzet sunar. Hafif ve şerbetli tatlı sevenlerin
+      favorilerindendir.
+      <img
+        src="https://d17wu0fn6x6rgz.cloudfront.net/img/w/tarif/ogt/9_9_11zon-557.webp"
+        alt="Kemalpaşa Tatlısı"
+      />
+    </p>
+    <h3>7. Kestane Şekeri</h3>
+    <p>
+      Bursa, kestane şekeriyle dünya çapında tanınır. Özenle haşlanmış
+      kestaneler, şeker şurubunda bekletilerek hazırlanan bu tatlı, hem hafif
+      hem de oldukça tatmin edicidir. Geleneksel yöntemlerle yapılan kestane
+      şekeri, Bursa’dan alınan bir hediyelik olarak da sıkça tercih edilir.
+      <img
+        src="https://turkiyeturizmansiklopedisi.com/uploads/img/2024/02/28/13524ab7a337c7167a871624f928c2a8f2b06327.webp"
+        alt="Kestane Şekeri"
+      />
+    </p>
+    <h3>8. Şıra</h3>
+    <p>
+      Üzümden yapılan ve fermente olmayan bir içecek olan şıra, Bursa
+      sofralarının klasik eşlikçisidir. Özellikle İskender kebapla birlikte
+      servis edilen şıra, hafif tatlı aromasıyla ağızda ferahlatıcı bir tat
+      bırakır.
+      <img
+        src="https://gelecekpartisi.org.tr/uploads/teskilat_tanitim/galeri-sira-20_06_2022_00_44_34.jpg"
+        alt="Şıra"
+      />
+    </p>
+    <h3>9. Dağ Çayı</h3>
+    <p>
+      Bursa’nın doğal bitki örtüsünden toplanan otlarla yapılan dağ çayı,
+      aromatik ve şifalı bir içecektir. Genellikle soğuk kış aylarında tercih
+      edilir ve limonla birlikte tüketilir.
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToZfB-UesJHZsdPXNae2VU39pCInZetN6afw&s"
+        alt="Dağ Çayı"
+      />
+    </p>
+    <br /><br /><br /><br />
+    <footer>
+      <!--Sayfanin En Alt Kismi-->
+      &copy;&nbsp;&nbsp;&nbsp;Bursa Tanıtım Websitesi
+    </footer>
+  </body>
+</html>

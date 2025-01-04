@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bursanın Nüfusu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="resimler/bursalogo2.png"
+      type="image/x-icon"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        /* Butun elemanlari etkiler */
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, sans-serif;
+        color: white;
+      }
+      body {
+        background-color: rgb(41, 40, 40);
+        position: relative;
+      }
+
+      header {
+        /* Sayfanin Ust Kismi */
+        position: relative;
+        height: 90px;
+        background-color: green;
+      }
+
+      h1 {
+        box-sizing: content-box;
+        position: absolute;
+        font-family: "Pacifico", serif;
+        margin-top: 0px;
+        height: 90px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: lighter;
+        background-color: green;
+        line-height: 75px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .logo {
+        position: absolute;
+        top: 7px;
+        left: 30px;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+      }
+
+      p {
+        margin: 50px 200px 0px 200px;
+        font-size: xx-large;
+        line-height: 65px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: xx-large;
+        margin: 50px 0 50px 0;
+        
+      }
+      div {
+        width: 100%;
+        height: 1500px;
+      }
+      table {
+        border: 2px solid black;
+        border-collapse: collapse;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: xx-large;
+        width: 70%;
+        height: 1200px;
+        position: absolute;
+        text-align: center;
+      }
+      th {
+        border: 2px solid black;
+        background-color: green;
+        margin: 5px 5px 5px 5px;
+      }
+      td {
+        border: 2px solid black;
+        margin: 5px 5px 5px 5px;
+      }
+      tr:nth-child(even) {
+        background-color: rgb(145, 142, 142);
+      }
+      tr:nth-child(odd) {
+        background-color: rgb(73, 72, 72);
+      }
+      tr:hover {
+        background-color: rgb(169, 224, 165);
+      }
+
+      .menu {
+        position: relative;
+        list-style: none;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin: 0;
+        padding: 0 0 0 250px;
+      }
+
+      .menu li {
+        font-weight: bold;
+        font-size: 20px;
+        position: relative;
+      }
+
+      .menu li ul {
+        border-radius: 0 0 10px 10px;
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        background-color: rgb(66, 64, 64);
+        z-index: 10;
+        list-style: none;
+      }
+
+      ul li a {
+        display: block;
+        width: auto;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      ul li a:hover {
+        background-color: black;
+      }
+      ul li ul a:hover {
+        background-color: rgb(154, 235, 154);
+      }
+
+      .menu li:hover ul {
+        display: block;
+      }
+
+      footer {
+        /* En alt kisim */
+        color: white;
+        text-align: center;
+        background-color: green;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--Sayfanin Ust Kismi-->
+      <img class="logo" src="resimler/bursalogo2.png" alt="logo" />
+      <h1>Bursayı Keşfet!</h1>
+      <ul class="menu">
+        <li>
+          <a href="index.html"
+            ><i class="fa-solid fa-house"></i> &nbsp;Anasayfa</a
+          >
+        </li>
+        <li>
+          <a href="#">Bursa Hakkında</a>
+          <ul>
+            <li><a href="tarih.html">Bursa'nın Tarihi</a></li>
+            <li><a href="nufus.html">Bursa'nın Nüfusu</a></li>
+            <li><a href="turizm.html">Bursa'nın Turizmi</a></li>
+            <li><a href="mutfak.html">Bursa'nın Mutfağı</a></li>
+          </ul>
+        </li>
+        <li style="margin-left: 700px">
+          <a href="https://www.instagram.com/bursabuyuksehir/?hl=tr"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/bursabuyuksehir/?locale=tr_TR"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://x.com/bursabuyuksehir?mx=2"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/c/BursaB%C3%BCy%C3%BCk%C5%9FehirBelediyesi16"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+    <h2 style="font-size: 60px">Bursa'nın Nüfusu</h2>
+    <!--Sayfanin İcerigi-->
+    <p>
+      Bursa, Türkiye'nin en kalabalık dördüncü şehridir ve 2024 yılı itibarıyla
+      yaklaşık 3,2 milyon nüfusa sahiptir. Marmara Bölgesi'nde yer alan Bursa,
+      hem tarihi hem de ekonomik öneminden dolayı hızla büyüyen bir metropoldür.
+      Şehir, kültür çeşitliliği bakımından zengindir ve göçmen nüfusu ile
+      oldukça dikkat çeker. Özellikle, sanayi ve ticaret alanlarındaki
+      gelişmişliği nedeniyle iş olanakları sunar ve bu durum şehre yoğun bir iç
+      göç akışı sağlar. İlçeleri arasında Osmangazi, Nilüfer ve Yıldırım gibi
+      merkezler yoğun nüfuslu bölgelerdir. Bunun yanı sıra, Bursa'nın nüfusu
+      genç bir yapıya sahiptir ve şehir, eğitim, sağlık ve sosyal hizmetler
+      bakımından da oldukça gelişmiştir. Kırsal alanlarda tarım ve hayvancılık,
+      şehir merkezinde ise sanayi, dokumacılık ve ticaret baskın ekonomik
+      faaliyetlerdir.
+    </p>
+    <p>
+      Bursa'nın nüfusu hakkında daha detaylı bilgi edinmek istiyorsanız aşağıda
+      yer alan tabloları inceleyebilirsiniz.
+    </p>
+    <h2>Yıllara Göre Bursa Nüfusu</h2>
+    <div>
+      <table>
+        <tr>
+          <th>Yıl</th>
+          <th>Bursa Nüfusu</th>
+          <th>Erkek Nüfusu</th>
+          <th>Kadın Nüfusu</th>
+          <th>Nüfus Yoğunluğu (km<sup>2</sup>)</th>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>3.214.571</td>
+          <td>1.605.941</td>
+          <td>1.608.630</td>
+          <td>295</td>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>3.194.720</td>
+          <td>1.595.869</td>
+          <td>1.598.851</td>
+          <td>294</td>
+        </tr>
+        <tr>
+          <td>2021</td>
+          <td>3.147.818</td>
+          <td>1.573.362</td>
+          <td>1.574.456</td>
+          <td>289</td>
+        </tr>
+        <tr>
+          <td>2020</td>
+          <td>3.101.833</td>
+          <td>1.550.767</td>
+          <td>1.551.066</td>
+          <td>285</td>
+        </tr>
+        <tr>
+          <td>2019</td>
+          <td>3.056.120</td>
+          <td>1.530.956</td>
+          <td>1.525.164</td>
+          <td>281</td>
+        </tr>
+        <tr>
+          <td>2018</td>
+          <td>2.994.521</td>
+          <td>1.498.219</td>
+          <td>1.496.302</td>
+          <td>275</td>
+        </tr>
+        <tr>
+          <td>2017</td>
+          <td>2.936.803</td>
+          <td>1.470.341</td>
+          <td>1.466.462</td>
+          <td>270</td>
+        </tr>
+        <tr>
+          <td>2016</td>
+          <td>2.901.396</td>
+          <td>1.454.059</td>
+          <td>1.447.337</td>
+          <td>267</td>
+        </tr>
+        <tr>
+          <td>2015</td>
+          <td>2.842.547</td>
+          <td>1.423.583</td>
+          <td>1.418.964</td>
+          <td>261</td>
+        </tr>
+        <tr>
+          <td>2014</td>
+          <td>2.787.539</td>
+          <td>1.394.715</td>
+          <td>1.392.824</td>
+          <td>256</td>
+        </tr>
+        <tr>
+          <td>2013</td>
+          <td>2.740.970</td>
+          <td>1.371.914</td>
+          <td>1.369.056</td>
+          <td>252</td>
+        </tr>
+        <tr>
+          <td>2012</td>
+          <td>2.688.171</td>
+          <td>1.343.894</td>
+          <td>1.344.277</td>
+          <td>247</td>
+        </tr>
+        <tr>
+          <td>2011</td>
+          <td>2.652.126</td>
+          <td>1.325.715</td>
+          <td>1.326.411</td>
+          <td>244</td>
+        </tr>
+        <tr>
+          <td>2010</td>
+          <td>2.605.495</td>
+          <td>1.300.283</td>
+          <td>1.305.212</td>
+          <td>239</td>
+        </tr>
+        <tr>
+          <td>2009</td>
+          <td>2.550.645</td>
+          <td>1.273.491</td>
+          <td>1.277.154</td>
+          <td>234</td>
+        </tr>
+        <tr>
+          <td>2008</td>
+          <td>2.507.963</td>
+          <td>1.253.151</td>
+          <td>1.254.812</td>
+          <td>230</td>
+        </tr>
+        <tr>
+          <td>2007</td>
+          <td>2.439.876</td>
+          <td>1.218.749</td>
+          <td>1.221.127</td>
+          <td>224</td>
+        </tr>
+      </table>
+    </div>
+    <h2>İlçelere Göre Bursa Nüfusu</h2>
+    <div>
+      <table>
+        <tr>
+          <th>Yıl</th>
+          <th>İlçe</th>
+          <th>İlçe Nüfusu</th>
+          <th>Erkek Nüfusu</th>
+          <th>Kadın Nüfusu</th>
+          <th>Nüfus Yüzdesi</th>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Osmangazi</td>
+          <td>885.273</td>
+          <td>443.313</td>
+          <td>441.960</td>
+          <td>% 27,54</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Yıldırım</td>
+          <td>654.491</td>
+          <td>328.855</td>
+          <td>325.636</td>
+          <td>% 20,36</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Nilüfer</td>
+          <td>543.934</td>
+          <td>268.186</td>
+          <td>275.748</td>
+          <td>% 16,92</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>İnegöl</td>
+          <td>299.203</td>
+          <td>150.721</td>
+          <td>148.482</td>
+          <td>% 9,31</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Gemlik</td>
+          <td>122.171</td>
+          <td>61.317</td>
+          <td>60.854</td>
+          <td>% 3,80</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Mudanya</td>
+          <td>109.964</td>
+          <td>53.458</td>
+          <td>56.506</td>
+          <td>% 3,42</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Mustafakemalpaşa</td>
+          <td>103.944</td>
+          <td>51.808</td>
+          <td>52.136</td>
+          <td>% 3,23</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Gürsu</td>
+          <td>103.770</td>
+          <td>52.470</td>
+          <td>51.300</td>
+          <td>% 3,23</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Karacabey</td>
+          <td>85.765</td>
+          <td>42.975</td>
+          <td>42.790</td>
+          <td>% 2,67</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Orhangazi</td>
+          <td>81.862</td>
+          <td>41.162</td>
+          <td>40.700</td>
+          <td>% 2,55</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Kestel</td>
+          <td>75.954</td>
+          <td>38.169</td>
+          <td>37.785</td>
+          <td>% 2,36</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Yenişehir</td>
+          <td>55.745</td>
+          <td>27.666</td>
+          <td>28.079</td>
+          <td>% 1,73</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>İznik</td>
+          <td>44.988</td>
+          <td>22.241</td>
+          <td>22.747</td>
+          <td>% 1,40</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Orhaneli</td>
+          <td>19.527</td>
+          <td>9.680</td>
+          <td>9.847</td>
+          <td>% 0,61</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Keles</td>
+          <td>11.321</td>
+          <td>5.638</td>
+          <td>5.683</td>
+          <td>% 0,35</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Büyükorhan</td>
+          <td>10.325</td>
+          <td>5.163</td>
+          <td>5.162</td>
+          <td>% 0,32</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Harmancık</td>
+          <td>6.334</td>
+          <td>3.119</td>
+          <td>3.215</td>
+          <td>% 0,20</td>
+        </tr>
+      </table>
+    </div>
+    <footer>
+      <!--Sayfanin En Alt Kismi-->
+      &copy;&nbsp;&nbsp;&nbsp;Bursa Tanıtım Websitesi
+    </footer>
+  </body>
+</html>

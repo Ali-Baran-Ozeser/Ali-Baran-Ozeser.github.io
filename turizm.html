@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bursanın Turistik Mekanları</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="resimler/bursalogo2.png"
+      type="image/x-icon"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        /* Butun elemanlari etkiler */
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, sans-serif;
+        color: white;
+      }
+      body {
+        background-color: rgb(41, 40, 40);
+        position: relative;
+      }
+
+      header {
+        /* Sayfanin Ust Kismi */
+        position: relative;
+        height: 90px;
+        background-color: green;
+      }
+
+      h1 {
+        box-sizing: content-box;
+        position: absolute;
+        font-family: "Pacifico", serif;
+        margin-top: 0px;
+        height: 90px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: lighter;
+        background-color: green;
+        line-height: 75px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      p {
+        display: flex;
+        margin: 50px 200px 0px 200px;
+        font-size: xx-large;
+        line-height: 65px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 60px;
+        margin: 50px 0 50px 0;
+      }
+
+      h3 {
+        font-size: 40px;
+        margin: 80px 0 80px 280px;
+        color: rgb(100, 226, 138);
+        text-decoration: underline;
+      }
+
+      .logo {
+        position: absolute;
+        top: 7px;
+        left: 30px;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+      }
+
+      img {
+        border-radius: 10px;
+        width: 20%;
+        position: relative;
+        right: 0px;
+      }
+
+      .menu {
+        position: relative;
+        list-style: none;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin: 0;
+        padding: 0 0 0 250px;
+      }
+
+      .menu li {
+        font-weight: bold;
+        font-size: 20px;
+        position: relative;
+      }
+
+      .menu li ul {
+        border-radius: 0 0 10px 10px;
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        background-color: rgb(66, 64, 64);
+        z-index: 10;
+        list-style: none;
+      }
+
+      ul li a {
+        display: block;
+        width: auto;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      ul li a:hover {
+        background-color: black;
+      }
+      ul li ul a:hover {
+        background-color: rgb(154, 235, 154);
+      }
+
+      .menu li:hover ul {
+        display: block;
+      }
+
+      footer {
+        /* En alt kisim */
+        color: white;
+        text-align: center;
+        background-color: green;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--Sayfanin Ust Kismi-->
+      <img class="logo" src="resimler/bursalogo2.png" alt="logo" />
+      <h1>Bursayı Keşfet!</h1>
+      <ul class="menu">
+        <li>
+          <a href="index.html"
+            ><i class="fa-solid fa-house"></i> &nbsp;Anasayfa</a
+          >
+        </li>
+        <li>
+          <a href="#">Bursa Hakkında</a>
+          <ul>
+            <li><a href="tarih.html">Bursa'nın Tarihi</a></li>
+            <li><a href="nufus.html">Bursa'nın Nüfusu</a></li>
+            <li><a href="turizm.html">Bursa'nın Turizmi</a></li>
+            <li><a href="mutfak.html">Bursa'nın Mutfağı</a></li>
+          </ul>
+        </li>
+        <li style="margin-left: 700px">
+          <a href="https://www.instagram.com/bursabuyuksehir/?hl=tr"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/bursabuyuksehir/?locale=tr_TR"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://x.com/bursabuyuksehir?mx=2"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/c/BursaB%C3%BCy%C3%BCk%C5%9FehirBelediyesi16"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+    <h2>Bursa'nın Turistik Mekanları</h2>
+    <!--Sayfanin İcerigi-->
+    <p>
+      Bursa, tarihi, doğal güzellikleri ve kültürel zenginlikleriyle Türkiye’nin
+      en güzel şehirlerinden biridir. Osmanlı’nın ilk başkenti olarak anılan
+      şehir, aynı zamanda birçok medeniyetin izlerini taşır. Bursa, doğal
+      güzellikleri, tarihi yapıları ve kültürel zenginlikleriyle her zevke hitap
+      eden bir şehirdir. Ziyaretçilerine tarih, doğa ve lezzet dolu bir deneyim
+      sunan Bursa, unutulmaz bir gezi rotası olarak hafızalarda yer eder. İşte
+      Bursa’da gezip görülebilecek turistik mekanlardan bazıları:
+    </p>
+    <h3>1. Uludağ</h3>
+    <p>
+      Bursa denilince akla ilk gelen yerlerden biri Uludağ’dır. Türkiye’nin en
+      büyük kış turizm merkezi olan Uludağ, kayak yapmayı sevenlerin uğrak
+      noktasıdır. Uludağ sadece kış aylarında değil, yaz aylarında da kamp ve
+      doğa yürüyüşü gibi aktivitelerle dikkat çeker. Yemyeşil ormanlarla kaplı
+      alanları, serin havası ve büyüleyici manzaralarıyla dört mevsim
+      ziyaretçilerini ağırlamaktadır.
+      <img
+        src="https://www.gezentiturizm.com/images/tour/2235_b.jpg"
+        alt="Uludağ"
+      />
+    </p>
+    <h3>2. Cumalıkızık Köyü</h3>
+    <p>
+      Cumalıkızık, Osmanlı döneminden günümüze kadar neredeyse hiç bozulmadan
+      gelmiş, tarihi bir köydür. UNESCO Dünya Mirası Listesi’nde yer alan köy,
+      taş döşeli dar sokakları, cumbalı evleri ve sıcak köy atmosferiyle
+      misafirlerini zamanda bir yolculuğa çıkarır. Ayrıca, burada kahvaltı
+      yapmak ve yöresel lezzetleri tatmak da ziyaretçilerin en çok tercih ettiği
+      aktivitelerden biridir.
+      <img
+        src="https://www.bizevdeyokuz.com/wp-content/uploads/Cumalikizik-renkli-evler.jpg"
+        alt="Cumalızık"
+      />
+    </p>
+    <h3>3. Yeşil Türbe ve Yeşil Camii</h3>
+    <p>
+      Yeşil Türbe, Osmanlı Sultanı Çelebi Mehmet’in anıt mezarıdır. Yeşil
+      çinilerle süslenmiş bu yapı, Bursa’nın en ikonik eserlerinden biridir.
+      Yanındaki Yeşil Camii ise ince taş işçiliği ve eşsiz süslemeleriyle dikkat
+      çeker. Hem dini hem de mimari açıdan büyük öneme sahip bu mekanlar, Bursa
+      ziyaretinin olmazsa olmazlarındandır.
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfzrZAU3fPiJdG50kQXGWJIAU0ExLY_edZGw&s"
+        alt="Yeşil Türbe"
+      />
+    </p>
+    <h3>4. Koza Han</h3>
+    <p>
+      Koza Han, Bursa’nın tarihi çarşılarından biridir. 15. yüzyılda İpek Yolu
+      ticaretinin merkezi olarak inşa edilmiştir. Günümüzde Koza Han, hem
+      alışveriş yapmak hem de tarihi bir atmosferde çay içmek isteyenler için
+      popüler bir mekandır. Hanın avlusunda oturup çayınızı yudumlarken tarihin
+      dokusunu hissedebilirsiniz.
+      <img
+        src="https://www.gotobursa.com.tr/uploads/2020/09/kozahan-ve-civari-14-sabit-bolukemini_3_large.jpg"
+        alt="Koza Han"
+      />
+    </p>
+    <h3>5. Tirilye</h3>
+    <p>
+      Tirilye, Mudanya ilçesine bağlı tarihi bir Rum kasabasıdır. Bu kasaba; taş
+      sokakları, eski Rum evleri, renkli yapısı ve huzurlu atmosferiyle dikkat
+      çeker. Bölge, verimli toprakları ve iklimi sayesinde kaliteli zeytinlerle
+      ünlüdür. Zeytin bahçeleri, kasabanın çevresini sarmış, manzarasına doğal
+      bir zenginlik katmıştır.
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXOGfAZNhRk5ehPwjvcywDji-Gk4uAWI6D5Q&s"
+        alt="Tirilye"
+      />
+    </p>
+    <h3>6. Tophane</h3>
+    <p>
+      Bursa’nın kalbinde yer alan Tophane, şehrin panoramik manzarasını sunar.
+      Osmangazi ve Orhangazi Türbeleri'ni içeren Tophane, saat kulesi ile de
+      meşhurdur. Bursa’nın tarihi dokusunu hissetmek ve eşsiz bir manzara
+      seyretmek için Tophane mutlaka ziyaret edilmelidir.
+      <img
+        src="https://www.gotobursa.com.tr/uploads/2021/09/saat-kulesi_large_large.jpg"
+        alt="Tophane"
+      />
+    </p>
+    <h3>7. Gölyazı</h3>
+    <p>
+      Gölyazı, Uluabat Gölü üzerine kurulmuş bir yarımada köyüdür. Doğal
+      güzellikleri ve huzurlu ortamıyla ziyaretçilerini kendine hayran bırakır.
+      Gölyazı’da, özellikle gün batımında gölde sandal gezintisi yapmak
+      unutulmaz bir deneyim sunar.
+      <img
+        src="https://www.bizevdeyokuz.com/wp-content/uploads/golyazi-2.jpg"
+        alt="Gölyazı"
+      />
+    </p>
+    <h3>8. İnkaya Çınarı</h3>
+    <p>
+      600 yıllık, devasa uzunluğa sahip bir çınar ağacı olan İnkaya Çınarı,
+      Bursa’nın simgelerinden biridir. Çevresindeki restoran ve kafeler, bu
+      tarihi ağacın gölgesinde dinlenmek ve lezzetli kahvaltılar yapmak için
+      ideal bir ortam sunar.
+      <img
+        src="https://www.kiralacar.com/blog/wp-content/uploads/2024/09/inkaya-cinari-1.webp"
+        alt="İnkaya Çınarı"
+      />
+    </p>
+    <h3>9. Muradiye Külliyesi</h3>
+    <p>
+      Muradiye Külliyesi, 15. yüzyılda Sultan II. Murad tarafından yaptırılmış
+      bir Osmanlı eseridir. Külliye, cami, medrese ve türbelerden oluşur.
+      Osmanlı’nın son dönem sultanlarının türbeleri burada yer alır. Sessiz ve
+      huzurlu atmosferiyle Bursa’nın en önemli tarihi mekanlarından biridir.
+      <img
+        src="https://gezibilen.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fgezbi-e89bc.appspot.com%2Fo%2FTravelPoint%252FBDIKoRch3iFAazdagLwm%252Fbanner.webp%3Falt%3Dmedia%26token%3D0488230b-b97e-4a6d-8c0b-e75800d184a2&w=3840&q=75"
+        alt="Muradiye Külliyesi"
+      />
+    </p>
+    <h3>10. Bursa Kaplıcaları</h3>
+    <p>
+      Bursa, termal turizmiyle de ünlüdür. Çekirge bölgesinde bulunan
+      kaplıcalar, şifa arayanlar için bir cazibe merkezidir. Osmanlı döneminden
+      beri kullanılan bu kaplıcalar, hem sağlık hem de dinlenme için idealdir.
+      <img
+        src="https://www.gotobursa.com.tr/uploads/2020/10/orhangazi-keramet-kaplicalari-1_medium.jpg"
+        alt="Kaplıca"
+      />
+    </p>
+    <br /><br /><br /><br /><br /><br />
+    <footer>
+      <!--Sayfanin En Alt Kismi-->
+      &copy;&nbsp;&nbsp;&nbsp;Bursa Tanıtım Websitesi
+    </footer>
+  </body>
+</html>
